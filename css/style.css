@@ -1,0 +1,365 @@
+ @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:wght@300;400;900&display=swap');
+ 
+
+ *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+ body{
+    font-family: 'Roboto', sans-serif;
+    height: 3000px;
+    overflow-X: hidden;
+    perspective: 600px;
+
+
+ }
+ a{
+    text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+ .all{
+    width:100%;
+    height:100vh;
+    background-color: #0162be;
+    color:#fff;
+ }
+
+ .container{
+    height: 100%;
+    width: 75%;
+    margin: 0 7rem;
+   
+ }
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+ }
+
+ nav .logo{
+    width:60px;
+    height: 60px;
+    margin-left: 40px;
+ }
+ 
+
+ nav ul{
+    display: flex;
+    margin-right: 30px;
+ }
+
+ nav ul a{
+    margin-right: 25px;
+    color: #fff;
+    transition-property: font-weight,color,font-size;
+    transition-duration: 0.4s;
+ }
+
+ .content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 1200px;
+   height: 70vh;
+ }
+ .all .content img{
+   width: 220px;
+   animation: animation2 1s ease-out ;
+ }
+ .content .content-text .p1{
+   font-size: 40px;
+ }
+ .content .content-text .p1 span{
+   font-size: 70px;
+
+ }
+ .content .content-text button{
+   color: black;
+   border-radius: 30px;
+   background-color: #fff;
+   height: 40px;
+   padding: 10px 15px ;
+   border:none;
+   margin-top: 40px;
+
+ }
+ .content .content-text button:hover{
+   background-color: transparent;
+   border: 2px solid #fff;
+   color: #fff;
+   transition: 0.2;
+   background: linear-gradient(to bottom, #0162be,rgb(234, 143, 143));
+ }
+ .social{
+   margin-left:3rem;
+   animation: animation2 1s ease-out ;
+ }
+ .social i{
+   margin:10px 0px;
+   font-size: 40px;
+
+ }
+ .content-text p:last-of-type{
+   width:60%;
+   margin-top: 30px;
+   line-height: 1.4;
+ }
+ figure img{
+   width:100px;
+   display:block;
+   margin: auto;
+   animation: animation1 1s ease-out ;
+ }
+ @keyframes animation1{
+   0%{transform: translatex(-900px);}
+   100%{transform: translatex(0);}
+
+ }
+ @keyframes animation2{
+   0%{transform: translateX(900px);}
+   100%{transform: translateX(0);}
+
+ }
+ nav ul a:hover{
+   color: rgb(234, 143, 143);
+   font-weight: 900;
+   font-size: 17px;
+   list-style: none;
+   text-decoration: none;
+   
+   
+ }
+
+
+
+.product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.product-info {
+  padding: 20px;
+  background-color: #fff;
+ 
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-price span{
+  font-size: 18px;
+  color: #f00; 
+  font-size: 25px;
+  
+}
+.product-price label{
+  display: inline;
+}
+.product-info .btn1 button{
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  margin: 15px 0px 0px 30px;
+  background-color:  #0162be;
+  color: #fff;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.product-info .btn1 button:hover{
+  border:2px solid #0162be;
+  background-color: #fff;
+  background-color: transparent;
+  color:#0162be;
+  font-size: 17px;
+  background: linear-gradient(to bottom, #0162be,rgb(244, 235, 235),rgb(234, 143, 143));
+  
+}
+
+
+#quantity{
+  width: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+label {
+  /* display: block; */
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 30px;
+  color: black;
+  font-size: 17px;
+}
+.parent-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  background: linear-gradient(#0162be,rgb(244, 235, 235),rgb(234, 143, 143),
+  rgb(244, 235, 235),#0162be,rgb(244, 235, 235),rgb(234, 143, 143),white,#0162be);
+ 
+}
+
+
+.product-image1 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p1.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.product-image2 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.product-image3 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image4 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.product-image5 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image6 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p6.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image7 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p7.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image8 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p8.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image9 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p9.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image10 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p10.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image11 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p11.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image12 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p12.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image13 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p14.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image14 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p15.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image15 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p16.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image16 {
+  width: 100%;
+  height: 330px;
+  background-image: url('../img/p17.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.f1{
+  background:linear-gradient(#e0c5c5) ;
+}
+
+
